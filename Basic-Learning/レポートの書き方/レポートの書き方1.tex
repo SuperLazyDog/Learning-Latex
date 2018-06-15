@@ -1,7 +1,38 @@
-\documentclass[twocolumn]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-\usepackage{float}
-\usepackage{amsmath,amssymb}
+\documentclass{jsarticle} %\documentclass[twocolumn]{jsarticle} \UTF{53D8}成\UTF{4E24}列
+
+\usepackage{color} % \UTF{989C}色
+\usepackage{listings,jlisting} % 插入代\UTF{7801}%
+
+\usepackage[dvipdfmx]{graphicx} % \UTF{56FE}表的插入
+\usepackage{float} % \UTF{56FE}表的位置
+
+\usepackage{amsmath,amssymb} % 行列式
+
+
+
+
+\lstset{ % C\UTF{8BED}言代\UTF{7801}的表示\UTF{8BBE}置
+language={C},
+backgroundcolor={\color[gray]{.95}},
+basicstyle={\small},
+identifierstyle={\small},
+commentstyle={\small\ttfamily \color[rgb]{0,0.5,0}},
+keywordstyle={\small\bfseries \color[rgb]{1,0,0}},
+ndkeywordstyle={\small},
+stringstyle={\small\ttfamily \color[rgb]{0,0,1}},
+frame={tb},
+breaklines=true,
+columns=[l]{fullflexible},
+numbers=left,
+xrightmargin=0zw,
+xleftmargin=3zw,
+numberstyle={\scriptsize},
+stepnumber=1,
+numbersep=1zw,
+morecomment=[l]{//}
+}
+
+
 \begin{document}
 	\begin{titlepage}
 		\title{サンプルレポート}
@@ -60,6 +91,17 @@
 			\includegraphics[width=4cm]{image-1.jpg}
 			\caption{sample}
 		\end{figure}
+
+	\subsection{sample 2}
+		% ソースコードを直接記入
+		\begin{lstlisting}[caption=キャプション,label=ラベル]
+#include <stdio.h>
+int main(void) {
+	//	コメント
+	printf("Hello World");
+	return 0;
+}
+		\end{lstlisting}
 
 	\begin{thebibliography}{9}
 		\bibitem{A} 俺『俺の俺』(俺社,2018)
