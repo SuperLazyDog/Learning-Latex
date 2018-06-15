@@ -1,0 +1,63 @@
+\documentclass[twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\begin{document}
+
+	\title{サンプルレポート}
+	\author{俺}
+	\maketitle
+    
+	\section{サンプルセクション 1}
+        		\subsection{subsection 1}
+            	itemize: 
+            
+                \begin{itemize}
+                    	\item a
+                    	\item b
+                    	\item c
+                \end{itemize}
+	\subsection{subsection 2}
+        		enumerate:
+		
+		\begin{enumerate}
+			\item a
+			\item b
+			\item c \cite{A}
+		\end{enumerate}
+        \subsection{subsection 3}
+		ここは単なるサンプルだから、書かなくていいよね
+    
+	\section{行列}
+		\subsection{A}
+			\begin{equation*}
+				A = 
+				\begin{pmatrix}
+					a_{11} & \ldots & a_{1n} \\
+					\vdots & \ddots & \vdots \\
+					a_{m1} & \ldots & a_{mn}
+				\end{pmatrix}
+			\end{equation*}
+			
+			\begin{equation*}
+				B = 
+				\begin{bmatrix}
+					1&1&12&8 \\
+					21&3&13&2 \\
+					13&213&2&921 \\
+					1&1&1&1
+				\end{bmatrix}
+			\end{equation*}
+
+	\section{図表}
+	\subsection{sample 1}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=4cm]{image-1.jpg}
+			\caption{sample}
+		\end{figure}
+
+	\begin{thebibliography}{9}
+		\bibitem{A} 俺『俺の俺』(俺社,2018)
+	\end{thebibliography}
+\end{document}
